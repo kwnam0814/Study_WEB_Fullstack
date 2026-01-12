@@ -1,0 +1,20 @@
+/* 여러 개의 선택자 */
+#first.one.two {
+    color: red;
+}
+
+/* 복합 선택자 */
+
+/* 후손 */
+.container .user-name {
+    color: orange;
+}
+
+/* .user-name {
+    color: yellow;
+} */
+
+/* 자식 */
+.container > .item {
+    background-color: yellow;
+}
