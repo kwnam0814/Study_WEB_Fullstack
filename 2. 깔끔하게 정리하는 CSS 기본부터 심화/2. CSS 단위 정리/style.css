@@ -1,0 +1,26 @@
+:root {
+    --light-pink-color: rgba(197, 93, 161, 0.5);
+}
+
+html {
+    font-size: 20px;
+}
+
+.px {
+    font-size: 50px;
+}
+
+.rem {
+    font-size: 3rem;
+    /* 20 * 3 = 60px 폰트크기 */
+}
+
+.em {
+    font-size: 1.2em;
+}
+
+.app {
+    background-color: var(--light-pink-color);
+    width: 50vw;
+    height: 50vh;
+}

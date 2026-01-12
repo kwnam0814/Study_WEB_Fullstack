@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>px 단위</h1>
+
+    <div class="px">픽셀 입니다.</div>
+
+    <h1>rem 단위</h1>
+
+    <div class="rem">rem 입니다.</div>
+
+    <h1>em 단위</h1>
+
+    <div class="em">
+        1단계 <!-- 10 * 1.2 = 12px -->
+        <div class="em">
+            2단계 <!-- 12 * 1.2 = 14.4px -->
+            <div id="em">
+                3단계 <!-- 14.4 * 1.2 = 17.28px -->
+            </div>
+        </div>
+    </div>
+
+    <div class="app">HELLO</div>
+</body>
+</html>
