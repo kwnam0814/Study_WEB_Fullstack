@@ -1,0 +1,31 @@
+* {
+    color: purple;
+}
+
+h1 {
+    color: blue;
+}
+
+#unique {
+    color: green;
+}
+
+.common {
+    color: orange;
+}
+
+[href] {
+    color: aqua;
+}
+
+[href="https://www.google.com"] {
+    color: rosybrown;
+}
+
+#first {
+    color: red;
+}
+
+.second {
+    color: yellowgreen;
+}
