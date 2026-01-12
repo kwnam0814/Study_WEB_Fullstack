@@ -9,8 +9,12 @@
 
   ```html
   <div class="one two three">복수 클래스</div>
+  ```
 
-  .one.two.three { background-color: aqua; }
+  ```css
+  .one.two.three {
+    background-color: aqua;
+  }
   ```
 
   - 여러개 선택자에 공통된 스타일을 적용하고 싶다면 콤마(,)로 구분하여 사용
@@ -18,8 +22,13 @@
   ```html
   <h1>1</h1>
   <h2>2</h2>
+  ```
 
-  h1,h2 { color: red; }
+  ```css
+  h1,
+  h2 {
+    color: red;
+  }
   ```
 
 - 복합 선택자
