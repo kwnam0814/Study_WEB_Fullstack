@@ -1,0 +1,13 @@
+/* id가 b인 것을 변경하겠다 */
+#b {
+    color: green;
+}
+
+/* 클래스가 a인 것을 변경하겠다 */
+.a {
+    color: blue;
+}
+
+h1 {
+    color: red;
+}
