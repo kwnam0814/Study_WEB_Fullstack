@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.color {
+    background-color: blue;
+}
+
+/* 가장 많이 사용하는 속성 */
+.image {
+    /* background-image: url("./css-background-image.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background: url("./css-background-image.jpg") no-repeat center / contain;
+}
+
+.size {
+    background-image: url("./css-background-image.jpg");
+    /* background-size: 500px 500px; */
+    /* background-size: contain; */
+    background-size: cover;
+}
+
+.repeat {
+    background-image: url("./css-background-image.jpg");
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    background-repeat: space;
+}
+
+.position {
+    background-image: url("./css-background-image.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position: bottom;
+}
+
+.attachment {
+    background-image: url("./css-background-image.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
