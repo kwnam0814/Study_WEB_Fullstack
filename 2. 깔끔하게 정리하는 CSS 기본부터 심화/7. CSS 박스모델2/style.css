@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px black solid;
+    padding: 10px;
+    margin: 10px;
+
+    /* 총 4개의 인자가 들어갈 수 있음 */
+    /* 좌상단, 우상단, 우하단, 좌하단 (시계 방향으로) */
+    /* border-radius: 5% 10% 15% 20%; */
+
+    /* 좌상단+우하단, 우상단+좌하단 */
+    border-radius: 5% 20%;
+
+    /* x축으로 얼마나, y축으로 얼마나, 그림자 블러 얼마나, 색깔 */
+    /* 여러 개 추가할 수 있음, 마이너스 값도 가능 */
+    box-shadow: 5px 30px 50px blue, -5px -30px 50px red;
+}
