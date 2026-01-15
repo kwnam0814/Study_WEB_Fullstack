@@ -1,0 +1,35 @@
+/* flex-direction */
+div {
+    border: 1px solid black;
+}
+
+.container {
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    justify-content: space-evenly;
+    /* justify-content: flex-start; 기본값 */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    align-items: center;
+    /* align-items: stretch; 기본값 */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+    align-content: space-between;
+    /* align-content: stretch; */
+    /* align-content: flex-start; */
+    /* align-content: center; */
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    background: brown;
+}
