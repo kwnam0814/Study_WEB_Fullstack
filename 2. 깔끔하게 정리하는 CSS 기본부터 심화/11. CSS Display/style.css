@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+div {
+    font-size: 3rem;
+    width: 800px;
+    background-color: red;
+}
+
+span {
+    display: inline-block;
+    font-size: 3rem;
+    width: 800px;
+    background-color: red;
+}

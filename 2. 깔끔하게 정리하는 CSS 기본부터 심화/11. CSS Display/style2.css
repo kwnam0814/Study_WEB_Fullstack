@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+button {
+    width: 50rem;
+    font-size: 3rem;
+}
+
+div {
+    font-size: 3rem;
+    /* display: none; */
+    visibility: hidden;
+}
+
+button:hover ~ div {
+    display: block;
+}
+
+span {
+    font-size: 3rem;
+}
