@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.first {
+    flex-basis: 30px;
+}
+
+.second {
+    flex-basis: 50px;
+}
+
+.third {
+    flex-basis: 20px;
+}
