@@ -1,0 +1,7 @@
+/* 화면의 너비가 480px 이하가 되면 */
+/* CSS 파일에 적지 않고 바로 HTML 파일에 직접 적어도 상관 없음 */
+@media only all and (max-width: 480px) {
+    h2 {
+        display: none;
+    }
+}
