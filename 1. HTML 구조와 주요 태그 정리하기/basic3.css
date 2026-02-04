@@ -1,0 +1,30 @@
+/* 스타일이 겹칠 경우 우선순위에 따라 정해짐! */
+/* style태그 : 1000점 > id : 100점 > 클래스 : 10점 > 태그 : 1점 */
+
+.profile {
+    width: 100px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.h3-title {
+    font-size: 16px; 
+    font-family:'Courier New', Courier, monospace; 
+    color: blue; 
+    text-align: center;
+}
+
+.content {
+    color: red;
+}
+
+p {
+    text-align: center;
+    letter-spacing: 5px;
+    color: green;
+}
+
+#special {
+    color: blue; font-weight: 800
+}
