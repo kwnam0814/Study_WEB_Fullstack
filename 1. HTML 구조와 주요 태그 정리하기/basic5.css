@@ -1,0 +1,43 @@
+.container {
+    width: 800px;
+}
+
+.header {
+    width: 100%; /* 부모 태그 width의 100% */
+    height: 50px;
+    background: aquamarine;
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background: cornflowerblue;
+    float: left;
+}
+
+.right-menu {
+    width: 80%;
+    height: 400px;
+    background: coral;
+    /* 보통 2단 레이아웃을 만들 때 .left-menu는 float: left, 
+    .right는 float: right로 설정해도 무방하지만, 
+    실무에서는 두 요소 모두 float: left를 주는 방식을 더 선호 */
+    /* 1. 모든 박스가 왼쪽부터 차례대로 쌓이는 구조가 되어, 
+    나중에 요소를 추가하거나 수정할 때 
+    레이아웃을 예측하기 훨씬 쉬움 */
+    /* 2. left와 right로 찢어 놓으면 
+    두 박스 사이의 간격(Margin)을 조절할 때 계산이 복잡해질 수 있지만, 
+    모두 한쪽으로 몰아두면 순차적으로 여백을 주기가 편함 */
+    float: left;
+}
+
+.footer {
+    /* header 바로 밑에 있는 것으로 되서 안보이는데? */
+    /* left-menu, right-menu의 css 속성을 'float(요소를 공중에 띄워서 정렬)' 로 주었음.
+    공중에 떠있는 애들은 무시하고 header 바로 밑에 위치됨. */
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    /* float 다음에 오는 요소에게 주면 float로 발생하는 이상한 현상 해결 가능 */
+    clear: both;
+}
