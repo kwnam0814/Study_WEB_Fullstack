@@ -1,0 +1,43 @@
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-content {
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+
+.blog-img {
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.blog-profile {
+    width: 50px;
+    float: left;
+    display: block;
+}
+
+.blog-name {
+    float: left;
+}
+
+/* selector 문법 > : ~ 안에 있는 직계 자식 */
+/* selector 문법 공백 : ~ 안에 있는 모든 자식 */
+.navbar > li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none; /* a태그의 밑줄제거 가능 */
+}
