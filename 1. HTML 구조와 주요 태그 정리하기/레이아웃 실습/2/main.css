@@ -17,3 +17,29 @@
     font-size: 40px;
     margin-top: 200px; /* margin collapse 현상 방지하기 위해 부모 태그에 padding 속성 줌. -> 싫으면 테두리 붙지 않게 하면 됨 */
 }
+
+/* position 속성 */
+/* 1. 좌표 이동 가능 */
+/* 2. 공중에 뜸 */
+/* position: relative; -> 내 원래 위치를 기준으로 이동 */
+/* position: static; -> 좌표 이동 X */
+/* position: fixed; -> 현재 화면이 기준 */
+/* position: absolute; -> 내 부모 태그 중 'position: relative;' 속성을 가진 부모 기준 */
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    /* position: absolute; 준 요소 가운데 정렬하기 */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+}
+
+.main-content {
+    color: white;
+    font-size: 15px;
+}
