@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>TMDB 인기 영화 TOP 10</title>
+    <style>
+    body { 
+        font-family: sans-serif; 
+        background-color: #121212; 
+        color: white; 
+        text-align: center; 
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* 컨테이너의 최대 너비를 설정하고 중앙 정렬 */
+    .movie-container { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 20px; 
+        max-width: 1200px; /* 화면이 너무 넓어지지 않게 제한 */
+        margin: 0 auto; 
+    }
+
+    /* 한 줄에 5개를 넣기 위해 계산 (간격 20px 제외) */
+    .movie-card { 
+        width: calc(20% - 20px); 
+        min-width: 180px; /* 모바일 등 작은 화면 대응 */
+        background: #1e1e1e; 
+        padding: 10px; 
+        border-radius: 10px; 
+        box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
+        transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover {
+        transform: scale(1.05); /* 마우스 올렸을 때 살짝 커지는 효과 */
+    }
+
+    .movie-card img { width: 100%; border-radius: 5px; }
+    .movie-card h3 { 
+        font-size: 1rem; 
+        margin: 10px 0; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; /* 제목이 너무 길면 ... 처리 */
+    }
+    .rank { font-weight: bold; color: #e50914; font-size: 1.2rem; }
+</style>
+</head>
+<body>
+
+    <h1>🔥 현재 인기 영화 TOP 10</h1>
+    <div id="movie-list" class="movie-container">
+        </div>
+
+    <script>
+        // 1. 여기에 자신의 API 키를 넣으세요
+        const API_KEY = ''; 
+        const API_URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=ko-KR&page=1`;
+        const IMG_PATH = 'https://image.tmdb.org/t/p/w500';
+
+        async function getMovies() {
+            try {
+                const res = await fetch(API_URL);
+                const data = await res.json();
+                
+                // 2. 상위 10개만 슬라이싱
+                const top10 = data.results.slice(0, 10);
+                
+                displayMovies(top10);
+            } catch (error) {
+                console.error("데이터를 불러오는 중 오류 발생:", error);
+            }
+        }
+
+        function displayMovies(movies) {
+            const container = document.getElementById('movie-list');
+            
+            movies.forEach((movie, index) => {
+                const movieEl = document.createElement('div');
+                movieEl.classList.add('movie-card');
+                
+                movieEl.innerHTML = `
+                    <p class="rank">TOP ${index + 1}</p>
+                    <img src="${IMG_PATH + movie.poster_path}" alt="${movie.title}">
+                    <h3>${movie.title}</h3>
+                    <p>⭐ ${movie.vote_average}</p>
+                `;
+                container.appendChild(movieEl);
+            });
+        }
+
+        getMovies();
+    </script>
+</body>
+</html>
