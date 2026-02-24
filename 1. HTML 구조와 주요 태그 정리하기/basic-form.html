@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="#">
+        <!-- 일반 글자 입력 -->
+        <input type="text" name="username" placeholder="사용자명을 입력하세요">
+
+        <!-- 비밀번호 입력 (입력한 글자가 마스킹 처리됨) -->
+        <input type="password" name="password" placeholder="비밀번호를 입력하세요">
+
+        <!-- 이메일 입력 (이메일 형식인지 자동으로 확인) -->
+        <input type="email" name="email" placeholder="이메일을 입력하세요">
+
+        <!-- 숫자 입력 -->
+        <input type="number" name="age" min="1" max="100">
+
+        <br>
+
+        <!-- 체크박스 (여러 개 선택 가능) -->
+        <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+
+        <input type="checkbox" id="hobby2" name="hobbies" value="music">
+
+        <!-- 라디오 버튼 (하나만 선택 가능) -->
+        <input type="radio" id="male" name="gender" value="male">
+
+        <input type="radio" id="female" name="gender" value="female">
+
+        <br>
+
+        <!-- 파일 선택 -->
+        <input type="file" name="profile_image" accept="image/*">
+
+        <!-- 숨겨진 입력창 (화면에 보이지 않음) -->
+        <input type="hidden" name="user_id" value="12345">
+
+        <!-- 날짜 선택 -->
+        <input type="date" name="birth_date">
+
+        <!-- 시간 선택 -->
+        <input type="time" name="meeting_time">
+
+        <br>
+
+        <label for="message">메시지:</label>
+        <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="50"
+        placeholder="메시지를 입력하세요"></textarea>
+
+        <br>
+
+        <label for="country">국가 선택:</label>
+        <select id="country" name="country">
+            <option value="">국가를 선택하세요</option>
+            <option value="kr">대한민국</option>
+            <option value="us">미국</option>
+            <option value="jp">일본</option>
+            <option value="cn">중국</option>
+        </select>
+
+        <br>
+
+        <!-- 폼 제출 버튼 -->
+        <button type="submit">제출</button>
+
+        <!-- 폼 초기화 버튼 (모든 입력을 지움) -->
+        <button type="reset">초기화</button>
+
+        <br>
+
+        <label for="username">사용자명:</label>
+        <input type="text" id="username" name="username" />
+        
+    </form>
+    
+</body>
+</html>
